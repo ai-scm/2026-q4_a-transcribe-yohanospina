@@ -1,16 +1,10 @@
 # Servicio Local de Transcripción Multimedia (ASR)
 
-Servicio dockerizado y privado de transcripción automática de audio y video basado en **faster-whisper** (modelo por defecto `large-v3-turbo`) y **Streamlit**, operando en entorno 100% local sin dependencias en la nube ni uso de APIs externas.
+Servicio dockerizado y privado de transcripción automática de audio y video basado en **faster-whisper** (modelo por defecto `large-v3-turbo`) y **Streamlit**.
 
 ---
 
-## 📋 Requisitos Previos
-
-- **Docker Engine** o **Docker Desktop** instalado y en ejecución.
-
----
-
-## 🛠️ Guía de Inicio Rápido
+## uía de Inicio Rápido
 
 ### 1. Construir la Imagen Docker
 
@@ -30,7 +24,7 @@ docker run -d --name whisper-app -p 8502:8501 -v $(pwd)/media:/media local-whisp
 
 ---
 
-## 💻 Formas de Uso
+## Formas de Uso
 
 ### Opción A: Desde la Línea de Comandos (CLI)
 
@@ -45,13 +39,6 @@ Ejecuta la transcripción directa sobre archivos `.mp3` o `.mp4` guardados en tu
   ```bash
   docker exec whisper-app transcribir -f /media/tu_archivo.mp4
   ```
-
-* **Especificar modelo o idioma alternativo:**
-  ```bash
-  docker exec whisper-app transcribir --model large-v3-turbo --language es /media/tu_archivo.mp4
-  ```
-
-*(El archivo resultante `.sub` se guardará automáticamente en tu carpeta local `./media`).*
 
 ---
 
