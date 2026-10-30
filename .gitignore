@@ -1,0 +1,7 @@
+media/*
+!media/.gitkeep
+__pycache__/
+*.sub
+.venv/
+.pytest_cache/
+.vscode/
