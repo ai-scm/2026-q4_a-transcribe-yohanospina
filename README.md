@@ -4,7 +4,7 @@ Servicio dockerizado y privado de transcripción automática de audio y video ba
 
 ---
 
-## uía de Inicio Rápido
+## Guía de Inicio Rápido
 
 ### 1. Construir la Imagen Docker
 
